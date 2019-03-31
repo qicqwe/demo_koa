@@ -1,0 +1,31 @@
+[2019-03-30T14:11:56.676] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: POST
+request originalUrl:  /user/login
+request client ip:  ::ffff:192.168.123.103
+request body: 
+{"userCount":"maqiao","passWord":"a"}
+response time: 27221
+err name: SequelizeEagerLoadingError
+err message: sys_user_role is not associated to sys_user!
+err stack: SequelizeEagerLoadingError: sys_user_role is not associated to sys_user!
+    at Function._getIncludedAssociation (D:\koa\demo_koa\node_modules\sequelize\lib\model.js:711:13)
+    at Function._validateIncludedElement (D:\koa\demo_koa\node_modules\sequelize\lib\model.js:615:53)
+    at options.include.options.include.map.include (D:\koa\demo_koa\node_modules\sequelize\lib\model.js:511:37)
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (D:\koa\demo_koa\node_modules\sequelize\lib\model.js:506:39)
+    at Promise.try.then.then (D:\koa\demo_koa\node_modules\sequelize\lib\model.js:1711:14)
+    at tryCatcher (D:\koa\demo_koa\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (D:\koa\demo_koa\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (D:\koa\demo_koa\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (D:\koa\demo_koa\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (D:\koa\demo_koa\node_modules\bluebird\js\release\promise.js:694:18)
+    at _drainQueueStep (D:\koa\demo_koa\node_modules\bluebird\js\release\async.js:138:12)
+    at _drainQueue (D:\koa\demo_koa\node_modules\bluebird\js\release\async.js:131:9)
+    at Async._drainQueues (D:\koa\demo_koa\node_modules\bluebird\js\release\async.js:147:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (D:\koa\demo_koa\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+*************** error log end ***************
+
